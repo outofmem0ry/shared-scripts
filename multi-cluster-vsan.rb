@@ -1,4 +1,5 @@
-oneGB = 1 * 1000 * 1000 # in KB
+oneGB = 1 * 1000 * 1000
+
 $testbed = Proc.new do
   {
     "name" => "oom-testbed",
@@ -13,10 +14,10 @@ $testbed = Proc.new do
         "clusterName" => "Mcluster",
         "style" => "fullInstall",
         "cpus" => 32, # 32 vCPUs
-        "memory" => 98000, # 98GB memory
+        "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * oneGB, 500 * oneGB ],
+        "disks" => [ 500 * GB, 500 * GB ],
         "guestOSlist" => [
           {
             "vmName" => "tkgmjumpbox",
@@ -27,17 +28,17 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.1",
-        "ssds" => [20 * oneGB],
+        "ssds" => [20 * GB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
         "clusterName" => "Mcluster",
         "style" => "fullInstall",
         "cpus" => 32, # 32 vCPUs
-        "memory" => 98000, # 98GB memory
+        "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * oneGB, 500 * oneGB ],
+        "disks" => [ 500 * GB, 500 * GB ],
         "guestOSlist" => [
           {
             "vmName" => "communityjumpbox",
@@ -48,17 +49,17 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.2",
-        "ssds" => [20 * oneGB],
+        "ssds" => [20 * GB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
         "clusterName" => "Scluster",
         "style" => "fullInstall",
         "cpus" => 32, # 32 vCPUs
-        "memory" => 98000, # 98GB memory
+        "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * oneGB, 500 * oneGB ],
+        "disks" => [ 500 * GB, 500 * GB ],
         "guestOSlist" => [
           {
             "vmName" => "tkgsjumpbox",
@@ -69,17 +70,17 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.3",
-        "ssds" => [20 * oneGB],
+        "ssds" => [20 * GB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
         "clusterName" => "Scluster",
         "style" => "fullInstall",
         "cpus" => 32, # 32 vCPUs
-        "memory" => 98000, # 98GB memory
+        "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * oneGB, 500 * oneGB ],
+        "disks" => [ 500 * GB, 500 * GB ],
         "guestOSlist" => [
           {
             "vmName" => "windowsjumpbox",
