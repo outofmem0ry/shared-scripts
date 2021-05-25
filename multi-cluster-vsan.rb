@@ -1,4 +1,4 @@
-oneGB = 1 * 1000 * 1000
+GB = 1 * 1000 * 1000
 
 $testbed = Proc.new do
   {
