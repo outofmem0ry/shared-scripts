@@ -6,7 +6,7 @@ $testbed = Proc.new do
     "esx" => [
       {
         "name" => "esx.0",
-        "ssds" => [20 * GB],
+        "ssds" => [20 * oneGB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
@@ -27,7 +27,7 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.1",
-        "ssds" => [20 * GB],
+        "ssds" => [20 * oneGB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
@@ -48,7 +48,7 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.2",
-        "ssds" => [20 * GB],
+        "ssds" => [20 * oneGB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
@@ -69,7 +69,7 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.3",
-        "ssds" => [20 * GB],
+        "ssds" => [20 * oneGB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
