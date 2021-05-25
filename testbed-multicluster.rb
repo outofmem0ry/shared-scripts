@@ -108,3 +108,4 @@ $testbed = Proc.new do
     "postBoot" => Proc.new do |runId, testbedSpec, vmList, catApi, logDir|
     end
   }
+end
