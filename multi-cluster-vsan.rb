@@ -7,7 +7,7 @@ $testbed = Proc.new do
     "esx" => [
       {
         "name" => "esx.0",
-        "ssds" => [20 * oneGB],
+        "ssds" => [20 * GB],
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "Datacenter",
