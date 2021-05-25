@@ -7,7 +7,6 @@ $testbed = Proc.new do
     "esx" => [
       {
         "name" => "esx.0",
-        "nics" => 4,
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "vcqaDC",
@@ -26,7 +25,6 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.1",
-        "nics" => 4,
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "vcqaDC",
@@ -45,7 +43,6 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.2",
-        "nics" => 4,
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "vcqaDC",
@@ -64,7 +61,6 @@ $testbed = Proc.new do
       },
       {
         "name" => "esx.3",
-        "nics" => 4,
         "vc" => "vc.0",
         "customBuild" => "ob-17630552",
         "dc" => "vcqaDC",
@@ -95,7 +91,7 @@ $testbed = Proc.new do
             "name" => "Mcluster",
             "dc" => "vcqaDC"
           },
-        {
+          {
             "name" => "Scluster",
             "dc" => "vcqaDC"
           }
