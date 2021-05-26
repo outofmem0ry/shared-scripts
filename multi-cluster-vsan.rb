@@ -17,14 +17,7 @@ $testbed = Proc.new do
         "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * GB, 500 * GB ],
-        "guestOSlist" => [
-          {
-            "vmName" => "tkgmjumpbox",
-            "cpus" => 8,
-            "ovfuri" => NimbusUtils.get_absolute_ovf("ajamali/ajamali-ubuntu-20.04/ajamali-ubuntu-20.04.ovf")
-          }
-        ]
+        "disks" => [ 500 * GB, 500 * GB ]
       },
       {
         "name" => "esx.1",
@@ -38,14 +31,7 @@ $testbed = Proc.new do
         "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * GB, 500 * GB ],
-        "guestOSlist" => [
-          {
-            "vmName" => "communityjumpbox",
-            "cpus" => 8,
-            "ovfuri" => NimbusUtils.get_absolute_ovf("ajamali/ajamali-ubuntu-20.04/ajamali-ubuntu-20.04.ovf")
-          }
-        ]
+        "disks" => [ 500 * GB, 500 * GB ]
       },
       {
         "name" => "esx.2",
@@ -59,14 +45,7 @@ $testbed = Proc.new do
         "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * GB, 500 * GB ],
-        "guestOSlist" => [
-          {
-            "vmName" => "tkgsjumpbox",
-            "cpus" => 8,
-            "ovfuri" => NimbusUtils.get_absolute_ovf("ajamali/ajamali-ubuntu-20.04/ajamali-ubuntu-20.04.ovf")
-          }
-        ]
+        "disks" => [ 500 * GB, 500 * GB ]
       },
       {
         "name" => "esx.3",
@@ -80,14 +59,7 @@ $testbed = Proc.new do
         "memory" => 98000,
         "fullClone" => true,
         "freeLocalLuns" => 2,
-        "disks" => [ 500 * GB, 500 * GB ],
-        "guestOSlist" => [
-          {
-            "vmName" => "windowsjumpbox",
-            "cpus" => 8,
-            "ovfuri" => NimbusUtils.get_absolute_ovf("ajamali/ajamali-ubuntu-20.04/ajamali-ubuntu-20.04.ovf")
-          }
-        ]
+        "disks" => [ 500 * GB, 500 * GB ]
       }
     ],
 
